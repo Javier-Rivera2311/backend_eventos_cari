@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🌐 Proyecto: bdyweb-ayudantia
 
 Este proyecto está relacionado con la asignatura de base de datos y programación web. Su objetivo es proporcionar recursos y herramientas útiles para los estudiantes que cursan esta materia.
@@ -49,3 +50,6 @@ Para utilizar este proyecto, sigue estos pasos:
    npm run dev
 
 ¡Disfruta explorando este proyecto y aprendiendo más sobre base de datos y programación web!
+=======
+# backend_eventos_cari
+>>>>>>> 77e4f4559e8220488a29227b8a0e5c2f3ac97129
