@@ -1,55 +1,57 @@
-<<<<<<< HEAD
-# 🌐 Proyecto: bdyweb-ayudantia
+# 🎉 Backend Eventos Cari
 
-Este proyecto está relacionado con la asignatura de base de datos y programación web. Su objetivo es proporcionar recursos y herramientas útiles para los estudiantes que cursan esta materia.
+Este es el backend para el proyecto **Eventos Cari**, desarrollado como parte de una ayudantía de *Bases de Datos y Programación Web*. Su propósito es servir como API para gestionar usuarios, contactos, departamentos y autenticación.
 
-## Requisitos previos
+---
 
-Para poner en marcha este proyecto, necesitas asegurarte de tener lo siguiente en tu entorno de desarrollo:
+## ⚙️ Requisitos previos
 
-- [Node.js](https://nodejs.org/): Asegúrate de tener Node.js instalado en tu computadora.
+Asegúrate de tener instalado en tu entorno:
 
-## Librerías utilizadas
+- [Node.js](https://nodejs.org/)
+- [MySQL](https://www.mysql.com/) (puedes usar [XAMPP](https://www.apachefriends.org/index.html) para desarrollo local)
 
-Este proyecto utiliza diversas librerías de Node.js para su funcionamiento. A continuación, se enumeran las principales:
+---
 
-- [nodemon](https://www.npmjs.com/package/nodemon): Utilizado para reiniciar automáticamente la aplicación cuando se realizan cambios en el código.
+## 📦 Tecnologías y librerías utilizadas
 
-- [express](https://expressjs.com/): Un marco de aplicación web de Node.js que facilita la creación de API y rutas.
+- **[Express](https://expressjs.com/)** – Framework de servidor para crear la API REST.
+- **[mysql2](https://www.npmjs.com/package/mysql2)** – Cliente MySQL compatible con Promesas.
+- **[bcrypt](https://www.npmjs.com/package/bcrypt)** – Para encriptar contraseñas.
+- **[jsonwebtoken](https://www.npmjs.com/package/jsonwebtoken)** – Para autenticación con tokens JWT.
+- **[dotenv](https://www.npmjs.com/package/dotenv)** – Gestión de variables de entorno.
+- **[nodemon](https://www.npmjs.com/package/nodemon)** – Recarga automática del servidor en desarrollo.
 
-- [dotenv](https://www.npmjs.com/package/dotenv): Para cargar variables de entorno desde un archivo `.env`.
+---
+## 🗃️ Configuración de MySQL
 
-- [cors](https://www.npmjs.com/package/cors): Un middleware que permite las solicitudes de otros dominios (útil para el desarrollo de API).
+- Asegúrate de que el servicio MySQL esté activo.
+- Crea la base de datos y tablas necesarias (puedes usar archivos `.sql` si los tienes).
+- Si usas **XAMPP** y MySQL no arranca, verifica que ningún otro servicio esté ocupando el puerto `3306`.
 
-- [morgan](https://www.npmjs.com/package/morgan): Un middleware de registro de solicitudes HTTP para Node.js.
+---
 
-- [mysql2](https://www.npmjs.com/package/mysql2): Un controlador MySQL para Node.js.
+## 🚀 Cómo ejecutar el proyecto
 
-## Configuración de MySQL
-
-Este proyecto utiliza MySQL como base de datos. Para ejecutar correctamente la aplicación, debes contar con un servidor MySQL funcionando. Se recomienda utilizar [XAMPP](https://www.apachefriends.org/index.html) para configurar un entorno de desarrollo local con MySQL.
-
-Si experimentas problemas al ejecutar MySQL en XAMPP, te recomendamos detener todos los servicios de MySQL en tu máquina, ya que pueden causar conflictos de puertos con XAMPP. 🚧
-
-
-## Cómo ejecutar el proyecto
-
-Para utilizar este proyecto, sigue estos pasos:
-
-1. Descarga o clona el repositorio en tu computadora.
-
-2. Abre una terminal y navega hasta la carpeta del proyecto.
-
-3. Ejecuta el siguiente comando para instalar las dependencias:
+1. Clona el repositorio:
 
    ```bash
+   git clone https://github.com/Javier-Rivera2311/backend_eventos_cari.git`
+   cd backend_eventos_cari
    npm install
-
-4. Ejecutar el siguiente comando para arrancar el proyecto:
-    ```bash   
    npm run dev
+    
 
-¡Disfruta explorando este proyecto y aprendiendo más sobre base de datos y programación web!
-=======
-# backend_eventos_cari
->>>>>>> 77e4f4559e8220488a29227b8a0e5c2f3ac97129
+## 🛠️ Configuración
+
+### 🔐 Variables de entorno
+
+Crea un archivo `.env` en la raíz del proyecto con la configuración de la base de datos y clave JWT:
+
+```env
+DB_HOST=localhost
+DB_USER=root
+DB_PASSWORD=tu_contraseña
+DB_NAME=nombre_de_tu_base_de_datos
+JWT_SECRET=una_clave_secreta_segura
+
